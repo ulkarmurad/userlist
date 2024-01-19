@@ -1,0 +1,199 @@
+body {
+  background-color: rgb(153, 145, 156);
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+
+  grid-gap: 4rem;
+}
+
+.card {
+  border: 7px solid rgb(78, 25, 91);
+  border-radius: 19%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* background-color: rgb(212, 195, 235); */
+  width: 19vw;
+  height: 40vh;
+  position: relative;
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid rgb(78, 25, 91);
+  object-fit: cover;
+  position: absolute;
+  /* left: 80px; */
+  top: 80px;
+}
+
+.info {
+  padding-top: 30px;
+}
+
+.topside {
+  background: radial-gradient(
+    609.6px at 21.5% 78.8%,
+    rgb(37, 99, 219) 0%,
+    rgb(233, 45, 181) 89.9%
+  );
+  width: 19vw;
+  height: 15vh;
+  border-bottom: 4px solid gray;
+  border-radius: 43px 43px 0 0;
+  padding-top: 20px;
+  position: absolute;
+}
+
+@media all and (min-width: 1700px) and (max-width: 1950px) {
+  .card {
+    height: 35vh;
+  }
+
+  .topside {
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+
+    border-radius: 62px 62px 0 0;
+  }
+
+  .card img {
+    width: 150px;
+    height: 150px;
+
+    object-fit: cover;
+    position: absolute;
+    /* left: 110px; */
+    top: 80px;
+  }
+
+  .info {
+    padding-top: 50px;
+    position: absolute;
+    top: 180px;
+  }
+}
+
+@media all and (min-width: 1500px) and (max-width: 1700px) {
+  .card {
+    height: 35vh;
+  }
+
+  .topside {
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+
+    border-radius: 55px 55px 0 0;
+  }
+
+  .card img {
+    width: 150px;
+    height: 150px;
+
+    object-fit: cover;
+    position: absolute;
+    /* left: 110px; */
+    top: 80px;
+  }
+  .info {
+    padding-top: 50px;
+    position: absolute;
+    top: 180px;
+  }
+}
+
+@media all and (min-width: 1300px) and (max-width: 1500px) {
+	.card {
+	  height: 35vh;
+	}
+ 
+	.topside {
+	  left: 0px;
+	  top: 0px;
+	  z-index: -1;
+ 
+	  border-radius: 50px 50px 0 0;
+	}
+ 
+	.card img {
+	  width: 150px;
+	  height: 150px;
+ 
+	  object-fit: cover;
+	  position: absolute;
+	  /* left: 110px; */
+	  top: 70px;
+	}
+	.info {
+	  padding-top: 50px;
+	  position: absolute;
+	  top: 170px;
+	}
+ }
+
+
+ @media all and (min-width: 1000px) and (max-width: 1300px) {
+	.card {
+	  height: 30vh;
+	}
+ 
+	.topside {
+	  left: 0px;
+	  top: 0px;
+	  z-index: -1;
+		height: 13vh;
+	  border-radius: 45px 45px 0 0;
+	}
+ 
+	.card img {
+	  width: 80px;
+	  height: 80px;
+ 
+	  object-fit: cover;
+	  position: absolute;
+	  /* left: 110px; */
+	  top: 60px;
+	}
+	.info {
+	  padding-top: 10px;
+	  position: absolute;
+	  top: 130px;
+	}
+ }
+
+ @media all and (min-width: 800px) and (max-width: 1000px) {
+	.card {
+	  height: 30vh;
+	}
+ 
+	.topside {
+	  left: 0px;
+	  top: 0px;
+	  z-index: -1;
+		height: 10vh;
+	  border-radius: 45px 45px 0 0;
+	}
+ 
+	.card img {
+	  width: 90px;
+	  height: 90px;
+ 
+	  object-fit: cover;
+	  position: absolute;
+	  /* left: 110px; */
+	  top: 60px;
+	}
+	.info {
+	  padding-top: 50px;
+	  position: absolute;
+	  top: 100px;
+	}
+ }
